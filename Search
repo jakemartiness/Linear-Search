@@ -1,0 +1,11 @@
+##Linear Search with Duplicate Value Handling:
+def linear_search(arr, target):
+    indices = []
+    for i in range(len(arr)):
+        if arr[i] == target:
+            indices.append(i)
+    return indices
+
+numbers = [5, 8, 2, 10, 3, 8, 6]
+target_indices = linear_search(numbers, 8)
+print(target_indices)
